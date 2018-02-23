@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save Employee</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <h1 class="jumbotron text-center">New Employees</h1>
+
+  <h3>{{ msg }}</h3>
+  <form action="/save" method="post" class="text-center">
+      <input type="number" name="idno"
+             placeholder="Enter Emp ID" required>
+      <br><br>
+      <input type="date" name="dob"
+             placeholder="Enter Emp DOB" required>
+      <br><br>
+      <input type="text" name="fname"
+             placeholder="Enter Emp 1s Name" required>
+      <br><br>
+       <input type="text" name="lname"
+             placeholder="Enter Emp Last Name" required>
+      <br><br>
+      <label for="">Select Your Gender</label> <br>
+      <input type="radio" name="gender" value="M" required> <label for="">M</label>
+      <input type="radio" name="gender" value="F"> <label for="">F</label>
+      <br><br>
+
+       <input type="date" name="date_joined"
+             placeholder="Enter Emp Date Joined" required>
+      <br><br>
+      <input type="submit" class="btn btn-success"
+             value="Save Employee">
+  </form>
+
+
+
+
+
+
+</body>
+</html>

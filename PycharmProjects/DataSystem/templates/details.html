@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <a href="/" class="btn btn-primary">BACK HOME</a>
+   <center>
+       <br><br>
+       <h3>Manage, Analyze, Visualize, Tabulate your data</h3>
+       <h1>EMPLOYEE DETAILS</h1>
+
+   </center>
+   <center>
+    <div >
+        {{ data.to_html(classes='table-stripped') | safe }}
+    </div>
+    </center>
+
+
+</body>
+</html>
